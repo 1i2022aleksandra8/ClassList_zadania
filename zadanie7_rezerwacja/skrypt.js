@@ -17,6 +17,14 @@ const book = document.querySelector('#btnBook');
 let counter = 0;
 
 seats.forEach(seat => {
+   book.addEventListener('click', function(){
+      if (seat.classList.contains('selected')){
+         seat.classList.remove('selected');
+         seat.classList.add('accupied');
+      }
+      counter = 0;
+      count.innerHTML = counter;
+   })
 
    seat.addEventListener('click', function(){
       seat.classList.toggle('selected');
@@ -26,24 +34,4 @@ seats.forEach(seat => {
       }
       count.innerHTML = counter;
    })
-
-   book.addEventListener('click', function(){
-      if (seat.classList.contains('selected')){
-         seat.classList.remove('selected');
-         seat.classList.add('accupied');
-      }
-      counter = 0;
-      count.innerHTML = counter;
-   })
 });
-
-
-
-
-
-
-
-
-
-
-const reserver = document.querySelectorAll(".row .seat:not(.selected)");
