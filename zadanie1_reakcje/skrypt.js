@@ -1,15 +1,15 @@
 // Miejsce na Twój kod
 // 1. Pobierz przyciski
-const like = document.querySelector('#btnLike');
-const dislike = document.querySelector('#btnDislike');
+const like = document.querySelector("#btnLike");
+const dislike = document.querySelector("#btnDislike");
 
 
-like.addEventListener("click", () => {
+like.addEventListener("click", function(){
     like.classList.toggle('active');
     dislike.classList.remove('active');
 })
 
-dislike.addEventListener('click', () => {
+dislike.addEventListener('click', function(){
     dislike.classList.toggle('active');
     like.classList.remove('active');
 })
