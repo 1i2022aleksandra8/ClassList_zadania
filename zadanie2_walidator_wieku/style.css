@@ -1,0 +1,57 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  background: #444;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  outline: none;
+  background: #555;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.msg {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #555;
+  font-size: 0.9rem;
+  border-left: 5px solid transparent;
+}
+
+/* Klasy stanów */
+.error {
+  border-left-color: #dc3545; /* Czerwony */
+  color: #ffdce0;
+}
+
+.warning {
+  border-left-color: #ffc107; /* Żółty */
+  color: #fff3cd;
+}
+
+.success {
+  border-left-color: #28a745; /* Zielony */
+  color: #d4edda;
+}
