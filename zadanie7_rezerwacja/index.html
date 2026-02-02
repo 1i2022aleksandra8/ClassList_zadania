@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleksandra Chimiak 4i" />
+    <title>Sprawdzian Gr B - Zadanie 7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="skrypt.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rezerwacja Miejsc</h1>
+
+      <ul class="showcase">
+        <li>
+          <div class="seat"></div>
+          <small>Wolne</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Wybrane</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Zajęte</small>
+        </li>
+      </ul>
+
+      <div class="screen">EKRAN</div>
+
+      <div class="cinema-container">
+        <!-- Rząd 1 -->
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Rząd 2 -->
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Rząd 3 -->
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <!-- Rząd 4 -->
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+
+      <p class="text">Wybrano siedzeń: <span id="count">0</span></p>
+
+      <button id="btnBook" class="btn">Rezerwuj wybrane</button>
+    </div>
+    <footer>
+      <p>Aleksandra Chimiak 4i</p>
+    </footer>
+  </body>
+</html>
