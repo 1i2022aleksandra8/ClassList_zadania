@@ -1,0 +1,62 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+  color: #555;
+}
+
+.btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Stan aktywny - Like */
+#btnLike.active {
+  background-color: #e7f3ff;
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+/* Stan aktywny - Dislike */
+#btnDislike.active {
+  background-color: #fff0f0;
+  border-color: #dc3545;
+  color: #dc3545;
+}
