@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleksandra Chimiak 4i" />
+    <title>Sprawdzian Gr B - Zadanie 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="skrypt.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kreator Konta</h1>
+
+      <!-- Wskaźnik postępu -->
+      <div class="progress-container">
+        <div class="progress-line"></div>
+        <div class="circle active" data-step="1">1</div>
+        <div class="circle" data-step="2">2</div>
+        <div class="circle" data-step="3">3</div>
+      </div>
+
+      <!-- Treść kroków -->
+      <div class="steps-content">
+        <div class="step active" id="step1">
+          <h2>Krok 1: Dane osobowe</h2>
+          <p>Wpisz imię i nazwisko...</p>
+        </div>
+        <div class="step" id="step2">
+          <h2>Krok 2: Adres</h2>
+          <p>Podaj ulicę i miasto...</p>
+        </div>
+        <div class="step" id="step3">
+          <h2>Krok 3: Weryfikacja</h2>
+          <p>Sprawdź poprawność danych i zatwierdź.</p>
+        </div>
+      </div>
+
+      <!-- Przyciski nawigacji -->
+      <div class="buttons">
+        <button id="btnPrev" class="btn" disabled>Wstecz</button>
+        <button id="btnNext" class="btn">Dalej</button>
+      </div>
+    </div>
+    <footer>
+      <p>Aleksandra Chimiak 4i</p>
+    </footer>
+  </body>
+</html>
